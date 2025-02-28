@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhammad Hamza - Web Developer Portfolio showcasing projects, skills, and contact information.">
+    <title>Online Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button onclick="topFunction()" id="scrollTopBtn">↑</button>
+    
+    <section id="home">
+        <!-- <div id="profile-picture">
+            <img src="picture.jpg" alt="Muhammad Hamza's Profile Picture">
+        </div> -->
+        <div id="profile-picture" class="animated-profile">
+            <div class="profile-overlay"></div>
+            <img src="/images/profile.jpg" alt="Muhammad Hamza's Profile Picture">
+        </div>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Muhammad Hamza, a Web Developer.</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Muhammad Hamza, a passionate Computer Science student with a strong command of web development. I specialize in HTML, CSS, JavaScript, and C++, continuously enhancing my skills to build interactive and efficient web applications.
+            My goal is to become a skilled software engineer, and I enjoy working on challenging projects that help me grow as a developer. Whether it's front-end design or problem-solving with algorithms, I am always eager to learn and improve.
+            In addition to web development, I have a keen interest in data structures, algorithms, and software engineering principles, which help me write optimized and scalable code.
+            Let's connect and create something amazing together! 🚀</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <article class="project">
+                <h3>Wheather App</h3>
+                <p>A weather forecasting app that fetches live weather data using APIs.</p>
+            </article>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C++</li>
+            <li>HTML and CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+        <li><a href="mailto:mhamza6927@gmail.com" target="_blank">Email</a></li>
+        <li class="Number"><a href="tel:+923294285456">Phone Number : +92 329 428 5456 </a></li>
+        <li><a href="https://www.linkedin.com/in/muhammad-hamza-8553a0323/" target="_blank">linkedin</a></li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Muhammad Hamza. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Get the button
+        let scrollTopBtn = document.getElementById("scrollTopBtn");
+    
+        // Show the button when scrolling down
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+    
+        // Function to scroll to the top
+        function topFunction() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    </script>
+    
+</body>
+</html>
