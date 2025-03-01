@@ -192,7 +192,7 @@ section h2::after {
 #contact ul {
     list-style: none;
     display: flex;
-    justify-content: centre;
+    justify-content: center;
     align-items: center;
     gap: 1.5rem;
 }
@@ -264,7 +264,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         padding: 0.5rem 0;
     }
@@ -292,6 +292,10 @@ footer {
     #profile-picture {
         height: 150px;
         width: 150px;
+    }
+
+    ul {
+        padding: 0;
     }
 }
 
