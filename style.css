@@ -192,7 +192,7 @@ section h2::after {
 #contact ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    justify-content: centre;
     align-items: center;
     gap: 1.5rem;
 }
@@ -202,7 +202,7 @@ section h2::after {
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    width: 300px;
+    width: 150px;
     text-align: center;
 }
 
@@ -222,6 +222,10 @@ section h2::after {
 
 #contact a:hover {
     background-color: #3498db;
+}
+
+#contact i {
+    font-size: 1.5rem;
 }
 
 /* Footer */
